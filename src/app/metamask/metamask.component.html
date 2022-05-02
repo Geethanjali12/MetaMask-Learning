@@ -1,4 +1,10 @@
-<button *ngIf="!walletAdd" type="button" (click)="openMetaMask()">Connect Metamask</button>
-<button *ngIf="walletAdd" type="button">{{walletAdd}}</button>
+<div>
+    <button *ngIf="!walletAdd" type="button" (click)="openMetaMask()">Connect Metamask</button>
+    <button *ngIf="walletAdd" type="button">{{walletAdd}}</button>
+</div>
+<br>
+<div>
+    <button type="button" (click)="setChainId()">Chain Id</button>
+</div>
+<br>
 
-<button (click)="setChainId()">Chain Id</button>
